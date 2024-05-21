@@ -1,3 +1,4 @@
+import { evaluate } from "mathjs";
 import { useState } from "react";
 
 function Calculator() {
@@ -72,13 +73,15 @@ function Calculator() {
     if (oprCheck) {
       let replace_str = calc.replace(/x/gi, "*");
 
-      if (isNaN(eval(replace_str))) {
+      const result = evaluate(replace_str);
+
+      if (isNaN(result)) {
         setCalc("");
-      } else if (eval(replace_str) === Infinity) {
+      } else if (result === Infinity) {
         alert("ERROR: Cannot divide into 0");
         setCalc("");
       } else {
-        setCalc((prev) => eval(replace_str));
+        setCalc(result);
       }
       setDoneCheck(true);
     }
