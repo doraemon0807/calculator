@@ -45,6 +45,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://doraemon0807.github.io/calculator",
   "devDependencies": {
     "@types/react-helmet": "^6.1.11"
   }
