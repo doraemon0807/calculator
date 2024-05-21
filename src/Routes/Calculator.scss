@@ -1,0 +1,68 @@
+.container {
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  padding: 30px;
+  box-shadow: 2px 5px 5px darkgray;
+  border-radius: 10px;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding: 10px;
+  }
+
+  .inputBox {
+    display: flex;
+    font-size: 60px;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .buttonContainer {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      border: 1px solid black;
+      color: black;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 1px 2px 2px darkgray;
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+
+    .actionButton {
+      background-color: orange;
+    }
+
+    .numberButton {
+      background-color: lightgray;
+    }
+
+    .operatorButton {
+      background-color: lightblue;
+    }
+
+    .equalButton {
+      grid-column: 3/5;
+      background-color: lightgreen;
+    }
+  }
+}
