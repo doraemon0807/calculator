@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>UVX Challenge - Yunseok Hong</title>
+        <title>Calculator App</title>
       </Helmet>
       <Calculator />
     </>
