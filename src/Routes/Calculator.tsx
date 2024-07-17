@@ -95,14 +95,15 @@ function Calculator() {
         </section>
         <section>
           <div className="buttonContainer">
-            <button onClick={getClear} value="AC" className="actionButton">
+            <button
+              onClick={getClear}
+              value="AC"
+              className="actionButton acButton"
+            >
               AC
             </button>
             <button onClick={getDel} value="DEL" className="actionButton">
               DEL
-            </button>
-            <button onClick={getOpr} value="%" className="actionButton">
-              %
             </button>
             <button onClick={getOpr} value="/" className="operatorButton">
               /
